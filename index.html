@@ -1,23 +1,49 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  
+    <head>
+        <meta charset="utf-8" />
+        <title>Your first Backbone.js App  </title>
+        
+        <!-- Google web fonts -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel='stylesheet' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-<div class="home">
+        <!-- The main CSS file -->
+    <link href="css/style.css" rel="stylesheet" />
+    
+    </head>
+    
+    <body>
 
-  <h1 class="page-heading">Posts</h1>
+      <!-- <ul class="nav nav-pills">
+              <li class="active"><a href="#">Rotten Reviews</a></li>
+              <li class="active"><a href="#">In Theaters</a></li>
+              <li><a href="#">New on DVD's</a></li>
+            </ul> -->
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Shivani's Playground</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/git-jQuery-webapp/">jQuery App<span class="sr-only">(current)</span></a></li>
+              <li><a href="/backbone-practice">BackboneJS App</a></li>
+              <li></li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Review Me</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <hr/>
+      <footer>Made with &hearts; by Shivani</footer>
+    </body>
+</html>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
