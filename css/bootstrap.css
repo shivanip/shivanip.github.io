@@ -4265,7 +4265,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 15px;
+    padding-top: 35px;
     padding-bottom: 15px;
   }
 }
@@ -4406,7 +4406,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: black;
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  color: white;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
